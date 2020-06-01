@@ -112,6 +112,21 @@ ul{
   background-color: rgba(209,168,39,.2);
 }
 
+.header-container{
+  background-color: rgba(209,168,39,.8);
+  position: relative;
+  height: 110px;
+  width: 100%;
+}
+
+.message-container{
+  background-color: rgba(209,168,39,.2);
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
 /* Nav Bar */
 
 .topnav {
@@ -321,7 +336,7 @@ input:checked ~ .nav-links {
 }
 
 .footer-link{
-  color: #11999E;
+  color: #2099b0;
   font-size: 25px;
   margin: 10px 35px;
   text-align: left;
@@ -341,6 +356,41 @@ input:checked ~ .nav-links {
 
 .copyright-sign{
   margin: 5px 0 0;
+}
+
+/*Message Me Page */
+
+.message-box {
+  width: 80%;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: left;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #505050;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #303030;
 }
 
 /* Responsive Design */
