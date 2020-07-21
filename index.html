@@ -3,10 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tsubasa Morita</title>
-  <!-- CSS StyleSheets -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
   <!-- Icons -->
   <link rel="icon" href="favicon.ico">
   <script src="https://kit.fontawesome.com/27b26577af.js" crossorigin="anonymous"></script>
@@ -16,102 +14,74 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- CSS StyleSheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <section id="title">
+  <header class="top-container" id="title">
 
     <!-- Nav Bar -->
-<!--
-    <div class="nav-container container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand my-logo" href=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-              <a class="nav-link" href="index.html" style="color: #eaf6f6">Home</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#about-me" style="color: #eaf6f6">About</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#skills" style="color: #eaf6f6">Skills</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#projects" style="color: #eaf6f6">Projects</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#contact" style="color: #eaf6f6">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
--->
-    <!-- Title -->
-
-    <div class="top-container">
-      <div class="topnav">
-        <div class="topnav-contents">
-          <!--<button type="button" class="collapsible navbar-toggle" id="toggle"></button>-->
-          <input class="topnav-toggle" type="checkbox" id="toggle">
-          <label class="topnav-toggle" for="toggle">.</label>
-          <nav class="nav-links">
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="#about-me">About</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <nav class="topnav">
+      <input class="topnav-toggle" type="checkbox" id="toggle">
+      <label class="topnav-toggle" for="toggle">.</label>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+    <!-- Title -->
+    <div>
       <h2 class="hey-title-text">Hi there,</h2>
       <h1 class="title-name">I'm Tsubasa,</h1>
       <h2 class="title-text">an aspiring full stack developer.</h2>
     </div>
-  </section>
+  </header>
 
   <!-- About Me -->
 
-  <div class="middle-container" id="about-me">
+  <main class="middle-container" id="about-me">
     <!-- Profile -->
     <section class="profile white" id="profile">
       <h2>Profile</h2>
-      <hr>
+      <hr class="intro-contact-hr">
       <img class="headshot" src="css\images\IMG_6414_Original-Edit.jpg" alt="headshot">
-      <div class="intro">
-        <p>I am currently an undergraduate student at Boston University, pursuing a double major Bachelors in Asian Studies and Computer Science. This site showcases some of the skills I've acquired and works I have done.</p>
-      </div>
+      <p class="intro">I am currently an undergraduate student at Boston University, pursuing a double major Bachelors in Asian Studies and Computer Science. This site showcases some of the skills I've acquired and projects I worked on.</p>
     </section>
     <!-- Skills -->
     <section class="skills color" id="skills">
       <h2>My Skills.</h2>
       <hr>
       <div class="odd">
-        <img class="wrench-img-odd" src="css\images\helping_hand-512.png" alt="skills-img">
-        <h3>Communicating as a Team</h3>
-        <p>I exhibit a teamwork mentality that allows me to communicate my capabilities and coordinate with others in best allocating and utilizing the combined skills of any teammates while also learning from my peers.</p>
-      </div>
-      <div class="even skill-even">
-        <img class="wrench-img-even" src="css\images\rocket_1-512.webp" alt="skills-img">
-        <h3>Creating Functional Applications</h3>
-        <p>I have created functional applications managing back-end properties, such as efficiency and data management, as well as design properties, such as color, sound, and organization. Check some of them out in the Projects tab.</p>
+        <img class="img-odd" src="css\images\helping_hand-512.png" alt="skills-img">
+        <div class="odd-even-text">
+          <h3>Communicating as a Team</h3>
+          <p>I exhibit a teamwork mentality that allows me to communicate my capabilities and coordinate with others in best allocating and utilizing the combined skills of my teammates while also learning from my peers.</p>
+        </div>
+          </div>
+      <div class="even last">
+        <img class="img-even" src="css\images\rocket.webp" alt="skills-img">
+        <div class="odd-even-text">
+          <h3>Creating Functional Applications</h3>
+          <p>I have created functional applications managing back-end properties, such as efficiency and data management, as well as design properties, such as color, sound, and organization. Check some of them out in the Projects section.</p>
+        </div>
       </div>
     </section>
     <!-- Projects -->
@@ -119,50 +89,54 @@
       <h2>My Projects.</h2>
       <hr>
       <div class="odd">
-        <img class="wrench-img-odd" src="css\images\d5174bf6e1a168329143c031d50541.png" alt="projects-img">
-        <h3>This Site!</h3>
-        <p>One of my first forays into front-end development, I utilized core design concepts of thematic colors and fonts as well as a user friendly, responsive formatting in order to create a simple yet informative site. </p>
-      </div>
+        <img class="img-odd" src="css\images\d5174bf6e1a168329143c031d50541.png" alt="projects-img">
+        <div class="odd-even-text">
+          <h3>This Site!</h3>
+          <p>One of my first forays into front-end development, I utilized core design concepts of thematic colors and fonts as well as a user friendly, responsive format in order to create a simple yet informative site. </p>
+        </div>
+        </div>
       <div class="even">
-        <img class="wrench-img-even" src="css\images\214-512.png" alt="projects-img">
-        <h3>Dynamic Memory</h3>
-        <p>To better understand dynamic memory allocation at the bitwise level, I simulated memory blocks to which I assigned data, while preserving any data already present, as well as removed data and compacted any free memory blocks together. </p>
+        <img class="img-even" src="css\images\214-512.png" alt="projects-img">
+        <div class="odd-even-text">
+          <h3>Dynamic Memory</h3>
+          <p>To better understand dynamic memory allocation at the bitwise level, I simulated memory blocks to which I assigned data - while preserving any data already present - as well as removed data and compacted any free memory blocks together. </p>
+        </div>
       </div>
-      <div class="odd">
-        <img class="wrench-img-odd" src="css\images\27-512.png" alt="projects-img">
-        <h3>Discrete Event Simulator</h3>
-        <p>A project exploring the many factors that affect system optimization, I worked with various scheduling methods, data structures, and threading techniques to create a system with no deadline misses.</p>
+      <div class="odd last">
+        <img class="img-odd" src="css\images\27-512.png" alt="projects-img">
+        <div class="odd-even-text">
+          <h3>Discrete Event Simulator</h3>
+          <p>A project exploring the many factors that affect system optimization, I worked with various scheduling methods, data structures, and threading techniques to create a system with no deadline misses.</p>
+        </div>
       </div>
     </section>
     <!-- Contact Me -->
     <section class="contact-me color" id="contact">
       <h2>Get In Touch</h2>
-      <hr>
-      <p class="contact-message">If you have an idea you want to discuss, get in touch through my email or my social media.</p>
+      <hr class="intro-contact-hr">
+      <p class="contact-message">If you have an idea or an opportunity you would like to discuss, get in touch through my email or my social media.</p>
       <!-- links open to new tab with target tag, but should change to javascript and keep html to purely content -->
       <ul class="contact-list">
         <li>
-          <a class="footer-link" href="mailto:tsubasamorita3@gmail.com"><i class="fas fa-envelope"></i> Message Me</a>
+          <a class="footer-link first-link" href="mailto:tsubasamorita3@gmail.com"><i class="fas fa-envelope"></i> Message Me</a>
         </li>
         <li>
           <a class="footer-link" href="https://www.linkedin.com/in/tsubasamorita3/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
         </li>
         <li>
-          <a class="footer-link" href="https://github.com/tsmorita3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a class="footer-link last-link" href="https://github.com/tsmorita3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </li>
       </ul>
     </section>
-  </div>
+  </main>
 
   <!-- Footer -->
 
-  <footer id="footer">
-    <div class="bottom-container">
-      <div class="copyright">
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <p class="copyright-sign">© 2019 Tsubasa Morita.</p>
-      </div>
+  <footer class="bottom-container" id="footer">
+    <div>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
+    <p class="copyright">&copy 2019 Tsubasa Morita.</p>
   </footer>
 
 </body>
